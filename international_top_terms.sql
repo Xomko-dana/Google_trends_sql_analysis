@@ -15,3 +15,32 @@ LIMIT 5
 -- Select unique names 
 SELECT DISTINCT country_name
 FROM bigquery-public-data.google_trends.international_top_terms
+
+-- Filter Data Countries (Czech republic)
+SELECT *
+FROM bigquery-public-data.google_trends.international_top_terms
+WHERE country_name = "Czech Republic"
+  
+-- Filter Data Ukraine with unique region_name
+SELECT DISTINCT region_name
+FROM bigquery-public-data.google_trends.international_top_terms
+WHERE country_name = "Ukraine"
+
+
+-- Get top trending search terms in Chernihiv region (Ukraine) for a specific date
+SELECT
+  term,
+  rank,
+  score,
+  country_name,
+  region_name,
+  refresh_date,
+  week
+FROM `bigquery-public-data.google_trends.international_top_terms`
+WHERE country_name = "Ukraine"
+  AND region_name = "Chernihivs'ka oblast"
+  AND refresh_date = "2026-05-05"
+  AND week = "2026-05-03"
+ORDER BY rank ASC
+LIMIT 25;
+
