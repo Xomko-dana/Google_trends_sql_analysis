@@ -11,3 +11,7 @@ FROM bigquery-public-data.google_trends.international_top_terms
 SELECT *
 FROM bigquery-public-data.google_trends.international_top_terms
 LIMIT 5
+
+-- Select unique names 
+SELECT DISTINCT country_name
+FROM bigquery-public-data.google_trends.international_top_terms
