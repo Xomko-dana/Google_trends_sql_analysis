@@ -21,6 +21,8 @@ Source:
 `bigquery-public-data.google_trends.top_terms`
 `bigquery-public-data.google_trends.international_top_terms`
 
+“Data is available at country and regional level (city-level data is not provided in this dataset)”
+
 ## 🔍 Example Query
 
 ```sql
