@@ -11,7 +11,7 @@ Analyze trending search terms and understand what users search for.
 
 ## 🧠 Skills Used
 
-* SQL (SELECT, WHERE, ORDER BY, LIMIT)
+* SQL (SELECT, WHERE, ORDER BY, LIMIT, AS)
 * Working with real datasets
 * Data filtering and sorting
 
@@ -19,6 +19,7 @@ Analyze trending search terms and understand what users search for.
 
 Source:
 `bigquery-public-data.google_trends.top_terms`
+`bigquery-public-data.google_trends.international_top_terms`
 
 ## 🔍 Example Query
 
